@@ -103,6 +103,7 @@ import './components/clipboard-copy.js';
       window.cancelAnimationFrame(rafId);
       showResult(barcodeValue, cameraResultsEl);
       addToHistory(barcodeValue);
+      
       scanInstructionsEl.hidden = true;
       scanBtn.hidden = false;
       scanFrameEl.hidden = true;
