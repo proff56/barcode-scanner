@@ -1,4 +1,4 @@
-export const NO_BARCODE_DETECTED = 'No barcode detected';
+export const EXPERIMENTAL_FLAG = 'experimental';
 
 export const ACCEPTED_MIME_TYPES = [
   'image/jpg',

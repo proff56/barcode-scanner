@@ -12,7 +12,6 @@ export function toggleTorchButtonStatus(options = {}) {
     isTorchOn: false
   };
   const { el, isTorchOn } = { ...defaults, ...options };
-  console.log(el, isTorchOn);
   const iconPaths = el.querySelectorAll('svg path');
 
   if (iconPaths.length !== 2) {
@@ -21,5 +20,5 @@ export function toggleTorchButtonStatus(options = {}) {
 
   iconPaths[0].style.display = isTorchOn ? 'none' : 'block';
   iconPaths[1].style.display = isTorchOn ? 'block' : 'none';
-  el.setAttribute('title', `Turn ${isTorchOn ? 'off' : 'on'} flash`);
+  el.setAttribute('aria-label', `Turn ${isTorchOn ? 'off' : 'on'} flash`);
 }
